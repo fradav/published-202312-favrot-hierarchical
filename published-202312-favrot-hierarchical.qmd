@@ -36,21 +36,18 @@ doi: "to complete"
 citation:
   type: article-journal
   container-title: "Computo"
-  issued: "2023/01/25"
+  issued: ""
   url: https://computo.sfds.asso.fr/
   issn: "2824-7795"
 google-scholar: true
 bibliography: references.bib
 github-user: computorg
-repo: "To complete"
+repo: "published-202312-favrot-hierarchical"
 draft: false 
 published: false
 format:
-  computo-pdf: default
   computo-html: default
-header-includes:
-  - \usepackage{lineno}
-  - \usepackage{soul}
+  computo-pdf: default
 ---
 
 
@@ -76,9 +73,6 @@ theme_replace(axis.text = element_text(size = x),   axis.title.x = element_text(
               strip.background = element_rect(fill = "#4345a1"), panel.background = element_rect(fill = "#f3faff"), panel.grid.major = element_line(colour = "white"))
 options(ggplot2.discrete.fill = list("#67c5a7"))
 ```
-
-\linenumbers
-
 
 
 # Introduction
@@ -341,7 +335,7 @@ Scenarios "50% Y - 0% Z" and "0% Y - 50% Z" are obtained from scenarios "100% Y 
 
 
 
-```{r simulations, results = 'hide', cache = FALSE}
+```{r simulations, results = 'hide', cache = TRUE}
 #| echo: true
 #| eval: true
 #| file: scripts/simulations.R
